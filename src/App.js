@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-// Import your components/pages
 import LandingPage from './pages/LandingPage';
 import NavBar from "./components/NavBar";
-
 function App() {
     return (
         <Router>
