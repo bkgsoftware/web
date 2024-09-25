@@ -11,7 +11,6 @@ function App() {
             <Routes>
                 <Route path="/" element={<LandingPage/>}/>
                 <Route path="/contact" element={<ContactPage/>}/>
-
             </Routes>
         </Router>
     );
