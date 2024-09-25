@@ -5,7 +5,7 @@ const ContactForm = () => {
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <form class="space-y-6" data-netlify="true" action="POST">
+                    <form class="space-y-6" data-netlify="true" action="POST" name="contact">
                         <div>
                             <label class="sr-only" for="name">Name</label>
                             <input placeholder="Name *" class="form-input w-full bg-gray-800 border border-gray-700 py-4 px-4 text-white rounded-lg" name="name" id="name" type="text" required />
