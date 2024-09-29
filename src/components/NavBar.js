@@ -36,7 +36,7 @@ const NavBar = () => {
             <div className="flex w-1/3 items-center justify-center">
                 <NavLink
                     to="/contact"
-                    className={({isActive}) => isActive ? "hover:text-primary hover:border " : "hover:p-2 hover:text-primary hover:border hover:rounded-md"}
+                    className={({isActive}) => isActive ? "hover:p-2 hover:text-primary hover:border hover:rounded-md" : "hover:p-2 hover:text-primary hover:border hover:rounded-md"}
                 >Contact
                 </NavLink>
             </div>
