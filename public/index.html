@@ -32,16 +32,24 @@
   <!-- HIDDEN HTML FORM FOR NETLIFY BOTS -->
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
     <label>Name
-      <input placeholder="Name *" name="name" id="name" type="text" required />
+      <input name="name" id="name" type="text" required />
+    </label>
+    <label>Company
+      <input name="company" id="name" type="text" required />
     </label>
     <label>Email
-      <input placeholder="Email *" name="email" id="email" type="email" required />
-    </label>
-    <label>Subject
-      <input placeholder="Subject *" name="subject" id="subject" type="text" required />
+      <input name="email" id="email" type="email" required />
     </label>
     <label>Message
-      <textarea placeholder="Message *" name="message" id="message" required></textarea>
+      <textarea  name="message" id="message" required></textarea>
+    </label>
+    <label>
+      Do not fill this field
+      <input
+      id="honeypot"
+      name="honeypot"
+      type="text"
+      />
     </label>
   </form>
 
