@@ -4,7 +4,7 @@ import { ReactComponent as BKGLogo} from "../assets/bkg.svg";
 
 const NavBar = () => {
     return (
-        <nav className="flex justify-between bg-tertiary p-2 pl-10 pr-10">
+        <nav className="flex w-full justify-between border-b-2 bg-tertiary p-2 pl-10 pr-10">
             <div className="flex w-1/3 items-center justify-center space-x-4">
                 <BKGLogo className="h-20 w-auto"/>
                 <h1>Software Consultancy</h1>
