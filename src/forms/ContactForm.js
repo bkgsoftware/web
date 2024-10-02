@@ -78,6 +78,7 @@ const ContactForm = () => {
                     />
                 </div>
             </fieldset>
+            <input type="hidden" name="form-name" value="contact" /> 
 
             <div className="mt-10">
                 <button
