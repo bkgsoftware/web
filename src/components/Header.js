@@ -4,10 +4,10 @@ import { Menu, X } from 'lucide-react'
 import logo from "../assets/bkg.svg";
 
 const navigation = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Meet the Team', href: '#' },
-    { name: 'Contact Us', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Services', href: '/' },
+    { name: 'Meet the Team', href: '/' },
+    { name: 'Contact Us', href: '/' },
   ]
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
     <header className="absolute inset-x-0 top-0 z-50 bg-white text-black">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 max-w-screen-xl mx-auto">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">BKG Software</span>
               <img
                 alt="Logo"
