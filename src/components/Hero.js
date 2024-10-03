@@ -16,7 +16,7 @@ const Hero = () => {
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                    href="#"
+                    href="/"
                     className="rounded-md bg-black px-3.5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-black-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black-600"
                 >
                     Give us your money now
