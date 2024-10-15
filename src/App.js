@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import FooterBar from "./components/FooterBar";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/contact" element={<ContactPage/>}/>
                 </Routes>
             </div>
+            <FooterBar />
         </BrowserRouter>
     );
 }

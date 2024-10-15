@@ -1,11 +1,11 @@
 import React from "react";
-import GitHubLogo from "../assets/github-logo.png";
+import { Github } from "lucide-react"
 
 const Copyright = () => {
     return (
-        <nav className="flex items-center justify-center border-t-2 bg-tertiary p-2 pl-10 pr-10">
+        <nav className="flex items-center justify-center text-center p-2 pl-10 pr-10 text-white bg-black">
             <a href="https://github.com/bkgsoftware">
-                <img src={GitHubLogo} alt="GitHub company logo"/>
+                <Github color='white'></Github>
             </a>
         </nav>
     );
