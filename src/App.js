@@ -10,7 +10,7 @@ import FooterBar from "./components/FooterBar";
 function App() {
     return (
         <BrowserRouter>
-            <div className="min-h-screen flex flex-col">
+            <div className="min-h-screen flex flex-col bg-white">
                 <Header/>
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
