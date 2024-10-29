@@ -2,7 +2,7 @@ import React from "react";
 import Copyright from "./Copyright";
 import SocialMedia from "./SocialMedia";
 
-const NavBar = () => {
+const FooterBar = () => {
     return (
         <div>
             <SocialMedia></SocialMedia>
@@ -11,4 +11,4 @@ const NavBar = () => {
     );
 }
 
-export default NavBar;
+export default FooterBar;

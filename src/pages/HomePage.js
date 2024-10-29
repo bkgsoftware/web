@@ -18,8 +18,6 @@ const HomePage = () => {
             <FeatureSection title="Cloud Intergration" description={featureDesciption1} imageSrc={FeatureSectionImage1} />
             <FeatureSection title="Custom Business Tools" description={featureDesciption2} imageSrc={FeatureSectionImage2} reverse='True' />
             <FeatureSection title="Web & App Development" description={featureDesciption3} imageSrc={FeatureSectionImage2} />
-
-            
         </div>
     );
 };
