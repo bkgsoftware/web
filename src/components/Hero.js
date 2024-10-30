@@ -8,11 +8,11 @@ const Hero = () => {
             </div>
             <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
-                <h1 className="text-balance text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                We build simple websites for <span className="text-orange italic">failing</span> businesses
+                <h1 className="text-balance text-6xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                We build software to <span className="text-orange italic">elevate</span> businesses
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
-                Why pay for a fancy website when statistically 50% of you are going under within a year
+                Adaptable solutions that fit your needs today and grow with you tomorrow.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
