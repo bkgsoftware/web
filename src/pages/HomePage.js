@@ -4,10 +4,10 @@ import FeatureSection from '../components/FeatureSection';
 import FeatureSectionImage1 from '../assets/featuresection1.png';
 import FeatureSectionImage2 from '../assets/featuresection2.png';
 
-const titleDescription = "We specialize in creating cloud-native solutions and custom business tools that streamline operations, enhance efficiency, and enable growth. With expertise in cloud platforms like AWS and GCP, alongside back-end and JavaScript frameworks, we design and develop systems that scale with your business."
-const featureDesciption1 = "Our team is adept at leveraging cloud services to create scalable, secure, and efficient solutions. Whether you're migrating to the cloud or optimizing your current infrastructure, we deliver cloud strategies tailored to your business."
-const featureDesciption2 = "We develop custom software solutions that integrate seamlessly into your business, automating workflows and simplifying day-to-day operations. From enterprise-level applications to targeted business tools, we ensure your software works for you"
-const featureDesciption3 = "Combining modern frameworks and robust back-end technologies, we build fast, scalable applications that support your business goals. Our solutions are designed to grow alongside your company, providing the flexibility and performance you need."
+const titleDescription = "We partner with your business to identify challenges, uncover opportunities, and map out a complete plan to build, migrate, and integrate cloud solutions seamlessly. From strategy to execution, we prioritize smooth adoption, so you can focus on what matters most."
+const featureDesciption1 = "Our team is adept at leveraging the cloud to design resilient, always-available systems you can rely on, giving you peace of mind and uninterrupted productivity."
+const featureDesciption2 = "We create software solutions built around your workflow, helping you make faster decisions and run your operations more efficiently."
+const featureDesciption3 = "Our web solutions blend sleek design and familiar interfaces with the usability of your favorite apps—designed specifically to enhance your business operations."
 
 
 const HomePage = () => {
@@ -15,7 +15,7 @@ const HomePage = () => {
         <div>
             <Hero/>
             <TitleSection title="Our Services" description={titleDescription}/>
-            <FeatureSection title="Cloud Intergration" description={featureDesciption1} imageSrc={FeatureSectionImage1} />
+            <FeatureSection title="Cloud Integration" description={featureDesciption1} imageSrc={FeatureSectionImage1} />
             <FeatureSection title="Custom Business Tools" description={featureDesciption2} imageSrc={FeatureSectionImage2} reverse='True' />
             <FeatureSection title="Web & App Development" description={featureDesciption3} imageSrc={FeatureSectionImage2} />
         </div>
