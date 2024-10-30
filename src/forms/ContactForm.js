@@ -47,16 +47,36 @@ const ContactForm = () => {
         return Object.keys(newErrors).length === 0;
     };
 
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         if (validateForm()) {
-            setSuccessMessage("Message has been sent!")
-            setFormData({
-                name: "",
-                company: "",
-                email: "",
-                message: ""
-            });
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({
+                    "form-name": "contact",
+                    ...formData
+                })
+            })
+                .then(() => {
+                    setSuccessMessage("Message has been sent!");
+                    setFormData({
+                        name: "",
+                        company: "",
+                        email: "",
+                        message: ""
+                    });
+                })
+                .catch(error => {
+                    setSuccessMessage("Oops! There was an error. Please try again.");
+                    console.log(error);
+                });
         }
     };
 
@@ -71,10 +91,19 @@ const ContactForm = () => {
     }, [successMessage]);
 
     return (
-        <form onSubmit={handleSubmit} name="contact" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form
+            onSubmit={handleSubmit}
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            className="mx-auto mt-16 max-w-xl sm:mt-20"
+        >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+
             <fieldset className="grid grid-cols-1 gap-y-6">
                 <legend className="sr-only">Contact Information</legend>
-                <input type="hidden" name="contact" value="contact"/>
 
                 <div className="sm:col-span-2">
                     <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -101,6 +130,7 @@ const ContactForm = () => {
                         id="company"
                         name="company"
                         type="text"
+                        required
                         value={formData.company}
                         onChange={handleChange}
                         autoComplete="organization"
@@ -150,7 +180,7 @@ const ContactForm = () => {
                     Send
                 </button>
             </div>
-                <p className="text-green text-sm text-center m-2">{successMessage}</p>
+            <p className="text-green text-sm text-center m-2">{successMessage}</p>
         </form>
     );
 };
