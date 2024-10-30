@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -9,6 +9,7 @@ const ContactForm = () => {
     });
 
     const [errors, setErrors] = useState({});
+    const [successMessage, setSuccessMessage] = useState();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -16,7 +17,6 @@ const ContactForm = () => {
             ...prev,
             [name]: value
         }));
-        // Clear error when user starts typing
         if (errors[name]) {
             setErrors(prev => ({
                 ...prev,
@@ -43,13 +43,14 @@ const ContactForm = () => {
         }
 
         setErrors(newErrors);
+        setSuccessMessage("Please recheck the form.")
         return Object.keys(newErrors).length === 0;
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
         if (validateForm()) {
-            console.log("Form submitted:", formData);
+            setSuccessMessage("Message has been sent!")
             setFormData({
                 name: "",
                 company: "",
@@ -58,6 +59,16 @@ const ContactForm = () => {
             });
         }
     };
+
+    useEffect(() => {
+        if (successMessage) {
+            const timer = setTimeout(() => {
+                setSuccessMessage("");
+            }, 3000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [successMessage]);
 
     return (
         <form onSubmit={handleSubmit} name="contact" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -139,6 +150,7 @@ const ContactForm = () => {
                     Send
                 </button>
             </div>
+                <p className="text-green text-sm text-center m-2">{successMessage}</p>
         </form>
     );
 };

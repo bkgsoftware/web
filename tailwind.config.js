@@ -15,7 +15,8 @@ module.exports = {
       'red-orange': '#EE6C4D',
       'white': '#F4F4F4',
       'black': '#202426',
-      'orange': '#ff5a13'
+      'orange': '#ff5a13',
+      'green' : '#4BB543'
     },
     extend: {},
   },
