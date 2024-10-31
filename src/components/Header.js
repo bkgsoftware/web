@@ -1,38 +1,86 @@
 import React, { useState } from "react";
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Menu, X } from 'lucide-react'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/bkg.svg";
 
+// Desktop nav link component
+const NavLink = ({
+                   to,
+                   children,
+                   isActive = false,
+                   className = ""
+                 }) => {
+  return (
+      <Link
+          to={to}
+          className={`transition-all duration-350 hover:scale-110 border-2 py-1 px-2 rounded-md hover:shadow-md ${
+              isActive
+                  ? 'border-orange shadow-md scale-110'
+                  : 'border-white hover:border-orange'
+          } ${className}`}
+      >
+        {children}
+      </Link>
+  );
+};
+
+// Mobile nav link component
+const MobileNavLink = ({
+                         to,
+                         children,
+                         isActive = false,
+                         className = ""
+                       }) => {
+  return (
+      <Link
+          to={to}
+          className={`-mx-3 block rounded-lg px-3 py-2 transition duration-350 hover:scale-110 ${
+              isActive ? 'scale-110 text-orange-500' : ''
+          } ${className}`}
+      >
+        {children}
+      </Link>
+  );
+};
+
 const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'Meet the Team', href: '/about' },
-    { name: 'Contact Us', href: '/contact' },
-  ]
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/services' },
+  { name: 'Meet the Team', href: '/about' },
+  { name: 'Contact Us', href: '/contact' },
+];
 
 const Header = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActivePath = (path) => {
+    if (path === '/') {
+      return location.pathname === '/';
+    }
+    return location.pathname.startsWith(path);
+  };
 
   return (
-    <header className="sticky inset-x-0 top-0 z-50 bg-white text-black shadow">
+      <header className="sticky inset-x-0 top-0 z-50 bg-white text-black shadow">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8 max-w-screen-xl mx-auto">
           <div className="flex lg:flex-1">
-            <Link to="/" className="flex -m-1.5 p-1.5 transition duration-350 hover:scale-110">
+            <Link to="/" className="flex -m-1.5 p-1.5 transition">
               <span className="sr-only">BKG Software</span>
               <img
-                alt="Logo"
-                src={logo}
-                className="h-8 w-auto"
+                  alt="Logo"
+                  src={logo}
+                  className="h-8 w-auto"
               />
               <h1 className="flex items-center ml-5">BKG Software</h1>
             </Link>
           </div>
           <div className="flex lg:hidden">
             <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black"
+                type="button"
+                onClick={() => setMobileMenuOpen(true)}
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black"
             >
               <span className="sr-only">Open main menu</span>
               <Menu aria-hidden="true" className="h-6 w-6" />
@@ -40,9 +88,13 @@ const Header = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link className="transition duration-350 hover:scale-110" key={item.name} to={item.href}>
-                {item.name}
-              </Link>
+                <NavLink
+                    key={item.name}
+                    to={item.href}
+                    isActive={isActivePath(item.href)}
+                >
+                  {item.name}
+                </NavLink>
             ))}
           </div>
         </nav>
@@ -73,16 +125,17 @@ const Header = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-black divide-opacity-30">
                 <div className="space-y-4 py-6">
-                  {navigation.map((item) => (
-                      <div key={item.name} className="flex justify-start">
-                        <Link
+                    {navigation.map((item) => (
+                    <div key={item.name} className="block">
+                      <NavLink
+                          key={item.name}
                           to={item.href}
-                          className="-mx-3 block rounded-lg px-3 py-2 transition duration-350 hover:scale-110"
-                        >
+                          isActive={isActivePath(item.href)}
+                      >
                           {item.name}
-                        </Link>
-                      </div>
-                    ))}
+                      </NavLink>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
