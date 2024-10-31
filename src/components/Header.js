@@ -25,25 +25,6 @@ const NavLink = ({
   );
 };
 
-// Mobile nav link component
-const MobileNavLink = ({
-                         to,
-                         children,
-                         isActive = false,
-                         className = ""
-                       }) => {
-  return (
-      <Link
-          to={to}
-          className={`-mx-3 block rounded-lg px-3 py-2 transition duration-350 hover:scale-110 ${
-              isActive ? 'scale-110 text-orange-500' : ''
-          } ${className}`}
-      >
-        {children}
-      </Link>
-  );
-};
-
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Services', href: '/services' },

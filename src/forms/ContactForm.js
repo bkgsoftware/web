@@ -180,7 +180,7 @@ const ContactForm = () => {
                     Send
                 </button>
             </div>
-            <p className="text-green text-sm text-center m-2">{successMessage}</p>
+            <p className="text-success text-sm text-center m-2">{successMessage}</p>
         </form>
     );
 };
