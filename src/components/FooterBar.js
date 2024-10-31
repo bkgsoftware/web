@@ -1,6 +1,7 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import {Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import QuickContact from "./QuickContact";
+import {Link} from 'react-router-dom';
 
 const FooterBar = () => {
     const currentYear = new Date().getFullYear();
@@ -22,11 +23,11 @@ const FooterBar = () => {
                 <div className="space-y-4">
                     <h3 className="text-white text-lg font-semibold">Quick Links</h3>
                     <ul className="space-y-2">
-                        <li><a href="#" className="hover:text-white">Home</a></li>
-                        <li><a href="#" className="hover:text-white">Services</a></li>
-                        <li><a href="#" className="hover:text-white">Meet the Team</a></li>
-                        <li><a href="#" className="hover:text-white">Careers</a></li>
-                        <li><a href="#" className="hover:text-white">Contact Us</a></li>
+                        <li><Link to="#" className="hover:text-white">Home</Link></li>
+                        <li><Link to="#" className="hover:text-white">Services</Link></li>
+                        <li><Link to="#" className="hover:text-white">Meet the Team</Link></li>
+                        <li><Link to="#" className="hover:text-white">Careers</Link></li>
+                        <li><Link to="#" className="hover:text-white">Contact Us</Link></li>
                     </ul>
                 </div>
 
@@ -55,9 +56,9 @@ const FooterBar = () => {
                         <p className="text-sm">&copy; {currentYear} BKG Software. All rights reserved.</p>
                         <div className="flex space-x-6">
                             {/* TODO Can be a quick generation of privacy and stuff. Esp since we do collected emails */}
-                            <a href="#" className="text-sm hover:text-white">Privacy Policy</a>
-                            <a href="#" className="text-sm hover:text-white">Terms of Use</a>
-                            <a href="#" className="text-sm hover:text-white">Cookie Policy</a>
+                            <Link to="#" className="text-sm hover:text-white">Privacy Policy</Link>
+                            <Link to="#" className="text-sm hover:text-white">Terms of Use</Link>
+                            <Link to="#" className="text-sm hover:text-white">Cookie Policy</Link>
                         </div>
                     </div>
                 </div>
