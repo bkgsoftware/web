@@ -8,14 +8,15 @@ const FooterBar = () => {
 
     return (
 
-        <footer className="bg-black text-white">
-        <QuickContact />
+        <footer className="bg-black text-white drop-shadow-2xl">
+
+            <QuickContact/>
             <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="space-y-4">
                     <h3 className="text-white text-lg font-semibold">BKG Software</h3>
                     <p className="text-sm">Business Tooling Software Consultancy</p>
                     <div className="flex items-center space-x-4">
-                        <Linkedin className="w-5 h-5 hover:text-dark-gray cursor-pointer" />
+                        <Linkedin className="w-5 h-5 hover:text-dark-gray cursor-pointer"/>
                     </div>
                 </div>
 
@@ -35,15 +36,15 @@ const FooterBar = () => {
                     <h3 className="text-white text-lg font-semibold">Contact Us</h3>
                     <div className="space-y-3">
                         <div className="flex items-center space-x-3">
-                            <MapPin className="w-5 h-5" />
-                            <span className="text-sm">123 Business Ave, Suite 100<br />New York, NY 10001</span>
+                            <MapPin className="w-5 h-5"/>
+                            <span className="text-sm">123 Business Ave, Suite 100<br/>New York, NY 10001</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                            <Phone className="w-5 h-5" />
+                            <Phone className="w-5 h-5"/>
                             <span className="text-sm">+1 (226) 929-5717</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                            <Mail className="w-5 h-5" />
+                            <Mail className="w-5 h-5"/>
                             <span className="text-sm">consulting@bkgsoftware.com</span>
                         </div>
                     </div>
