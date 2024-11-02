@@ -91,6 +91,7 @@ const QuickContact = () => {
 
     return (
         <div className="bg-off-white">
+
             <div className="grid sm:grid-cols-2 items-start gap-16 p-4 max-w-7xl mx-auto">
                 <div>
                     <h1 className="text-black text-3xl font-extrabold">Get in touch</h1>
@@ -103,9 +104,12 @@ const QuickContact = () => {
                         <h2 className="text-black text-base font-bold">Email</h2>
                         <ul className="mt-4">
                             <li className="flex items-center">
-                                <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff' viewBox="0 0 479.058 479.058">
-                                        <path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 289.47H44.912V104.794h389.234v244.558z" />
+                                <div
+                                    className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
+                                         viewBox="0 0 479.058 479.058">
+                                        <path
+                                            d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 289.47H44.912V104.794h389.234v244.558z"/>
                                     </svg>
                                 </div>
                                 <a href="mailto:info@yourdomain.com" className="text-sm ml-4">
@@ -121,8 +125,10 @@ const QuickContact = () => {
                         <ul className="flex mt-4 space-x-4">
                             <li className="h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                 <a href="https://facebook.com/yourpage">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff' viewBox="0 0 24 24">
-                                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3 8h-1.35c-.538 0-.65.221-.65.778V10h2l-.209 2H13v7h-3v-7H8v-2h2V7.692C10 5.923 10.931 5 13.029 5H15v3z" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
+                                         viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3 8h-1.35c-.538 0-.65.221-.65.778V10h2l-.209 2H13v7h-3v-7H8v-2h2V7.692C10 5.923 10.931 5 13.029 5H15v3z"/>
                                     </svg>
                                 </a>
                             </li>
@@ -138,8 +144,8 @@ const QuickContact = () => {
                     data-netlify-honeypot="bot-field"
                     className="ml-auto space-y-4"
                 >
-                    <input type="hidden" name="form-name" value="quick-contact" />
-                    <input type="hidden" name="bot-field" />
+                    <input type="hidden" name="form-name" value="quick-contact"/>
+                    <input type="hidden" name="bot-field"/>
 
                     <div>
                         <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
