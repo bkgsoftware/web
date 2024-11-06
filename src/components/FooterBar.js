@@ -1,16 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import QuickContact from "./QuickContact";
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 const FooterBar = () => {
+    const location = useLocation();
+    const [showHtml, setShowHtml] = useState(true)
+    useEffect(() => {
+        if (location.pathname === '/contact') {
+            setShowHtml(false)
+        } else {
+            setShowHtml(true)
+        }
+    }, [location.pathname]);
+
     const currentYear = new Date().getFullYear();
 
     return (
-
         <footer className="bg-black text-white drop-shadow-2xl">
 
-            <QuickContact/>
+            {showHtml ? <QuickContact/> : ''}
             <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="space-y-4">
                     <h3 className="text-white text-lg font-semibold">BKG Software</h3>

@@ -19,6 +19,7 @@ module.exports = {
       'orange': '#ff5a13',
       'success' : '#4BB543',
       'green': '#32936f',
+      'transparent': '#00000000',
     },
     extend: {},
   },

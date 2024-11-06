@@ -10,8 +10,6 @@ const ContactPage = () => {
                 <p className="mt-2 text-lg leading-8 text-gray-600">
                     Thinking about your next project? Connect with us to learn more about how we can help you and your business. Get in touch via the contact form, or send us an email directly to <Link to="mailto:consulting@bkgsoftware.com" className="text-orange">consulting@bkgsoftware.come</Link>
                 </p>
-
-
             </div>
             <ContactForm />
         </div>

@@ -18,8 +18,8 @@ function App() {
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/contact" element={<ContactPage/>}/>
                 </Routes>
+                <FooterBar />
             </div>
-            <FooterBar />
         </BrowserRouter>
     );
 }
