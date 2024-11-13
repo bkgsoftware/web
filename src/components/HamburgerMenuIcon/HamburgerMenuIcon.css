@@ -1,0 +1,52 @@
+.hamburger {
+    position: relative;
+    width: 24px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  
+  .line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #202426;
+    transition: all 0.3s ease;
+  }
+  
+  .line.top {
+    top: 0;
+  }
+  
+  .line.middle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .line.bottom {
+    bottom: 0;
+  }
+
+  .hamburger.open {
+    transform: rotate(360deg);
+  }
+  
+  /* Animation for the open state */
+  .hamburger.open .top {
+    transform: translateY(7px) rotate(45deg);
+    /* width: 34px; */
+  }
+  
+  .hamburger.open .middle {
+    opacity: 0;
+  }
+  
+  .hamburger.open .bottom {
+    transform: translateY(-7px) rotate(-45deg);
+    /* width: 34px; */
+  }
+  
