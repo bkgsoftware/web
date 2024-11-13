@@ -10,7 +10,7 @@ const FeatureSection = ({ title, description, imageSrc, reverse = false }) => (
               {description}
             </p>
           </div>
-          <div className={`mb-4 lg:mb-0 max-w-[275px] mx-auto lg:max-w-full ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
+          <div className={` mb-4 lg:mb-0 max-w-[275px] mx-auto lg:max-w-full ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
             <img src={imageSrc} alt={title} className="w-full h-auto object-cover" />
           </div>
         </div>
