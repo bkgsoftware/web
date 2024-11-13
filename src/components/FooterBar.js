@@ -69,6 +69,7 @@ const FooterBar = () => {
                             <Link to="#" className="text-sm hover:text-white">Privacy Policy</Link>
                             <Link to="#" className="text-sm hover:text-white">Terms of Use</Link>
                             <Link to="#" className="text-sm hover:text-white">Cookie Policy</Link>
+                            <Link to="popsy.co" className="text-sm hover:text-light-gray">Images from popsy.co</Link>
                         </div>
                     </div>
                 </div>
