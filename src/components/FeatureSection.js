@@ -1,20 +1,39 @@
+
+const TextSection = ({ title, description }) => (
+  <div className="flex items-center justify-center w-full md:w-1/2">
+    <div className="flex flex-col justify-center items-center p-8">
+    <h2 className="text-center text-3xl lg:text-4xl font-bold mb-8 text-black">
+      {title}
+    </h2>
+    <p className="text-center text-black text-md lg:text-lg">
+      {description}
+    </p>
+    </div>
+  </div>
+);
+
+const ImageSection = ({ imageSrc }) => (
+  <div className="flex items-center justify-center md:w-1/2">
+    <img src={imageSrc} alt="stylistic graphic" className="px-8"/>
+  </div>
+);
+
 const FeatureSection = ({ title, description, imageSrc, reverse = false }) => (
-    <section className="pt-16 lg:pt-20 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="grid gap-10 lg:gap-20 lg:grid-cols-2 content-center">
-          <div className={`flex flex-col justify-center ${reverse ? 'lg:order-2' : 'lg:order-1'}`}>
-            <h2 className="text-center text-3xl lg:text-4xl font-bold mb-8 text-black">
-              {title}
-            </h2>
-            <p className="text-center text-lg lg:text-xl text-black">
-              {description}
-            </p>
-          </div>
-          <div className={`mb-4 lg:mb-0 max-w-[275px] mx-auto lg:max-w-full ${reverse ? 'lg:order-1' : 'lg:order-2'}`}>
-            <img src={imageSrc} alt={title} className="w-full h-auto object-cover" />
-          </div>
+    <section className="flex justify-center items-center py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
+        <div className="flex flex-col md:flex-row items-center justify-center max-w-[1200px]">
+          {!reverse ? (
+            <>
+              <TextSection title={title} description={description}/>
+              <ImageSection imageSrc={imageSrc}/>
+            </>
+          )
+          : (
+            <>
+              <ImageSection imageSrc={imageSrc}/>
+              <TextSection title={title} description={description}/>
+              </>
+          )}
         </div>
-      </div>
     </section>
   );
   

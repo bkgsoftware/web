@@ -17,7 +17,7 @@ const FooterBar = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-black text-white drop-shadow-2xl">
+        <footer className="bg-black text-white">
 
             {showHtml ? <QuickContact/> : ''}
             <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

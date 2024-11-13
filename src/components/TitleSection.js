@@ -1,18 +1,10 @@
 const TitleSection = ({ title, description }) => (
-  <div className="text-center py-20 text-white bg-black">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      
-      <div className="hidden md:block"></div>
-
-      <div className="col-span-1">
-        <h2 className="text-4xl font-bold mb-4">{title}</h2>
-        <p className="text-lg text-gray-600">{description}</p>
+  <section className="flex justify-center items-center text-white bg-black py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
+    <div className="flex flex-col items-center justify-center text-balance text-center max-w-2xl gap-y-8">
+      <h2 className="text-3xl lg:text-4xl font-bold">{title}</h2>
+      <p className="text-md lg:text-lg">{description}</p>
       </div>
-
-      <div className="hidden md:block"></div>
-
-    </div>
-  </div>
+  </section>
 );
 
 export default TitleSection;

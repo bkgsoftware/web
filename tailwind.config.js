@@ -10,6 +10,7 @@ module.exports = {
       'tertiary': '#334155',
       'dark-blue': '#3D5A80',
       'light-blue': '#98C1D9',
+      'blue': '#13b8ff',
       'light-gray': '#E0FBFC',
       'dark-gray': '#293241',
       'red-orange': '#EE6C4D',
@@ -18,7 +19,9 @@ module.exports = {
       'black': '#202426',
       'orange': '#ff5a13',
       'success' : '#4BB543',
-      'green': '#32936f',
+      // 'green': '#32936f',
+      'green': '#71ff13', // triadic green to our orange
+      'dark-green': '#58bf0e',
       'transparent': '#00000000',
     },
     extend: {},

@@ -11,6 +11,9 @@ const QuickContact = () => {
     const [errors, setErrors] = useState({});
     const [successMessage, setSuccessMessage] = useState("");
 
+    const labelClass = "text-sm text-black"
+    const inputClass = `w-full rounded-3xl px-4 py-3 text-black ${errors.name ? '' : 'ring-orange'} placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange bg-white`
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -90,10 +93,100 @@ const QuickContact = () => {
     }, [successMessage]);
 
     return (
-        <div className="bg-off-white">
+        <section className="flex justify-center items-center bg-white py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
+            <div className="flex flex-col md:flex-row items-center justify-between w-[1200px] shadow-lg rounded-md p-16">
+                <div className='flex flex-col w-2/3 bg-secondary'>
+                    <h1 className="text-black text-3xl font-bold">Get in touch</h1>
+                    <p className='text-black'>Need assistance or have a project in mind? Reach out and let's discuss how we can help.</p>
+                    <form
+                        onSubmit={handleSubmit}
+                        name="quick-contact"
+                        method="POST"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        className="flex flex-col space-y-4"
+                    >
+                        <input type="hidden" name="form-name" value="quick-contact"/>
+                        <input type="hidden" name="bot-field"/>
 
-            <div className="grid sm:grid-cols-2 items-start gap-16 p-4 max-w-7xl mx-auto">
-                <div>
+                        <div>
+                            <label htmlFor="name" className={`${labelClass}`}>
+                                Your Name
+                            </label>
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                required
+                                value={formData.name}
+                                onChange={handleChange}
+                                placeholder='John Doe'
+                                className={`${inputClass}`}
+                            />
+                            {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
+                        </div>
+
+                        <div>
+                            <label htmlFor="email" className={`${labelClass}`}>
+                                Email
+                            </label>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                required
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder='John.Doe@gmail.com'
+                                className={`${inputClass}`}
+                            />
+                            {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
+                        </div>
+
+                        <div>
+                            <label htmlFor="subject" className={`${labelClass}`}>
+                                Subject
+                            </label>
+                            <input
+                                id="subject"
+                                name="subject"
+                                type="text"
+                                value={formData.subject}
+                                onChange={handleChange}
+                                placeholder="Let's connect"
+                                className={`${inputClass}`}
+                            />
+                        </div>
+
+                        <div>
+                            <label htmlFor="message" className={`${labelClass}`}>
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows={6}
+                                required
+                                value={formData.message}
+                                onChange={handleChange}
+                                className={`${inputClass}`}
+                            />
+                            {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
+                        </div>
+
+                        <button
+                            type="submit"
+                            className="block w-full rounded-md bg-blue-500 hover:bg-blue-600 px-3.5 py-2.5 text-center text-white text-sm transition-all duration-500 hover:shadow-lg"
+                        >
+                            Send Message
+                        </button>
+
+                        {successMessage && (
+                            <p className="text-success text-sm text-center mt-2">{successMessage}</p>
+                        )}
+                    </form>
+                </div>
+                <div className='flex flex-col bg-off-white w-1/3'>
                     <h1 className="text-black text-3xl font-extrabold">Get in touch</h1>
                     <p className="text-sm text-black mt-4">
                         Need assistance or have a project in mind? Reach out, and
@@ -135,93 +228,8 @@ const QuickContact = () => {
                         </ul>
                     </div>
                 </div>
-
-                <form
-                    onSubmit={handleSubmit}
-                    name="quick-contact"
-                    method="POST"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
-                    className="ml-auto space-y-4"
-                >
-                    <input type="hidden" name="form-name" value="quick-contact"/>
-                    <input type="hidden" name="bot-field"/>
-
-                    <div>
-                        <label htmlFor="name" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Name <span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            id="name"
-                            name="name"
-                            type="text"
-                            required
-                            value={formData.name}
-                            onChange={handleChange}
-                            className={`mt-2.5 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ${errors.name ? 'ring-red-500' : 'ring-orange'} placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange sm:text-sm sm:leading-6`}
-                        />
-                        {errors.name && <p className="mt-1 text-sm text-red-500">{errors.name}</p>}
-                    </div>
-
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Email <span className="text-red-500">*</span>
-                        </label>
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            required
-                            value={formData.email}
-                            onChange={handleChange}
-                            className={`mt-2.5 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ${errors.email ? 'ring-red-500' : 'ring-orange'} placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange sm:text-sm sm:leading-6`}
-                        />
-                        {errors.email && <p className="mt-1 text-sm text-red-500">{errors.email}</p>}
-                    </div>
-
-                    <div>
-                        <label htmlFor="subject" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Subject
-                        </label>
-                        <input
-                            id="subject"
-                            name="subject"
-                            type="text"
-                            value={formData.subject}
-                            onChange={handleChange}
-                            className="mt-2.5 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-orange placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange sm:text-sm sm:leading-6"
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Message <span className="text-red-500">*</span>
-                        </label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows={6}
-                            required
-                            value={formData.message}
-                            onChange={handleChange}
-                            className={`mt-2.5 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ${errors.message ? 'ring-red-500' : 'ring-orange'} placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange sm:text-sm sm:leading-6`}
-                        />
-                        {errors.message && <p className="mt-1 text-sm text-red-500">{errors.message}</p>}
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="block w-full rounded-md bg-blue-500 hover:bg-blue-600 px-3.5 py-2.5 text-center text-white text-sm transition-all duration-500 hover:shadow-lg"
-                    >
-                        Send Message
-                    </button>
-
-                    {successMessage && (
-                        <p className="text-success text-sm text-center mt-2">{successMessage}</p>
-                    )}
-                </form>
             </div>
-        </div>
+        </section>
     );
 };
 
