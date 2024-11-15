@@ -1,6 +1,6 @@
 import Button from "./Button";
-import CTAButton from "./CtaButton";
-import OutlinedButton from "./OutlinedButton";
+// import CTAButton from "./CtaButton";
+// import OutlinedButton from "./OutlinedButton";
 
 const Hero = () => {
   return (

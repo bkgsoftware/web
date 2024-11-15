@@ -3,7 +3,6 @@ import LocationIcon from "../assets/location";
 import PaperPlane from "../assets/paper-plane";
 import EmailIcon from "../assets/email";
 import LinkedInIcon from "../assets/linkedin";
-import Button from "./Button";
 
 const QuickContact = () => {
   const [formData, setFormData] = useState({

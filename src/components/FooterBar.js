@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
+// import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import QuickContact from "./QuickContact";
 import { Link, useLocation } from "react-router-dom";
 
