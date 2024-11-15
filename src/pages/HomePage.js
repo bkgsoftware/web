@@ -1,8 +1,15 @@
-import Hero from "../components/Hero";
-import TitleSection from "../components/TitleSection";
-import FeatureSection from "../components/FeatureSection";
-import FeatureSectionImage1 from "../assets/featuresection1.png";
-import FeatureSectionImage2 from "../assets/featuresection2.png";
+// TODO Consolidate SVG imports
+//import Hero from "../components/Hero";
+//import TitleSection from "../components/TitleSection";
+//import FeatureSection from "../components/FeatureSection";
+//import FeatureSectionImage1 from "../assets/featuresection1.png";
+//import FeatureSectionImage2 from "../assets/featuresection2.png";
+import Hero from '../components/Hero';
+import TitleSection from '../components/TitleSection';
+import FeatureSection from '../components/FeatureSection';
+import FeatureSectionImage1 from "../assets/app-launch.svg";
+import FeatureSectionImage2 from '../assets/calculator.svg';
+import FeatureSectionImage3 from '../assets/idea-launch.svg';
 
 const titleDescription =
   "We partner with businesses to plan, build, and integrate cloud architecture. From strategy to execution, we prioritize smooth adoption so you can focus on what matters most.";
