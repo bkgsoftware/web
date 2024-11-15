@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const TextSection = ({ title, description }) => (
   <div className="flex items-center justify-center w-full md:w-1/2">
-    <div className="flex flex-col justify-center items-center p-8">
+    <div className="flex flex-col justify-center items-center px-8">
       <h2 className="text-center text-3xl lg:text-4xl font-bold mb-8 text-black">
         {title}
       </h2>
@@ -11,19 +11,20 @@ const TextSection = ({ title, description }) => (
   </div>
 );
 
-const ImageSection = ({ imageSrc }) => (
+const ImageSection = ({ svg }) => (
   <div className="flex items-center justify-center md:w-1/2">
-    <img src={imageSrc} alt="stylistic graphic" className="px-8" />
+    {/* <img src={imageSrc} alt="stylistic graphic" className="px-8" /> */}
+    {svg}
   </div>
 );
 
-const FeatureSection = ({ title, description, imageSrc, reverse = false }) => {
-  const [isLgScreen, setIsLgScreen] = useState(false);
+const FeatureSection = ({ title, description, svg, reverse = false }) => {
+  const [isMdScreen, setIsMdScreen] = useState(false);
 
   // Check window size to determine if it meets the lg breakpoint condition
   useEffect(() => {
     const handleResize = () => {
-      setIsLgScreen(window.innerWidth >= 1024); // 1024px is the Tailwind `lg` breakpoint
+      setIsMdScreen(window.innerWidth >= 768); // 1024px is the Tailwind `lg` breakpoint
     };
 
     // Initial check
@@ -37,16 +38,16 @@ const FeatureSection = ({ title, description, imageSrc, reverse = false }) => {
   }, []);
 
   return (
-    <section className="flex justify-center items-center py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
+    <section className="flex justify-center items-center ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
       <div className="flex flex-col md:flex-row items-center justify-center max-w-[1200px]">
-        {!reverse || !isLgScreen ? (
+        {!reverse || !isMdScreen ? (
           <>
             <TextSection title={title} description={description} />
-            <ImageSection imageSrc={imageSrc} />
+            <ImageSection svg={svg} />
           </>
         ) : (
           <>
-            <ImageSection imageSrc={imageSrc} />
+            <ImageSection svg={svg} />
             <TextSection title={title} description={description} />
           </>
         )}

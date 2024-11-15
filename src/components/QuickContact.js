@@ -101,8 +101,8 @@ const QuickContact = () => {
 
   return (
     <section className="flex justify-center items-center bg-blue py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
-      <div className="flex flex-col lg:flex-row items-center justify-between w-[1200px] shadow-lg rounded-md p-8 bg-white">
-        <div className="flex flex-col w-full lg:w-2/3 bg-white p-8 gap-y-8">
+      <div className="flex flex-col lg:flex-row items-center justify-between w-[1200px] shadow-lg rounded-md lg:p-8 bg-white">
+        <div className="flex flex-col w-full lg:w-2/3 bg-white py-8 px-4 sm:p-8 gap-y-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-orange">
             Get in touch
           </h1>

@@ -1,15 +1,9 @@
-// TODO Consolidate SVG imports
-//import Hero from "../components/Hero";
-//import TitleSection from "../components/TitleSection";
-//import FeatureSection from "../components/FeatureSection";
-//import FeatureSectionImage1 from "../assets/featuresection1.png";
-//import FeatureSectionImage2 from "../assets/featuresection2.png";
-import Hero from '../components/Hero';
-import TitleSection from '../components/TitleSection';
-import FeatureSection from '../components/FeatureSection';
-import FeatureSectionImage1 from "../assets/app-launch.svg";
-import FeatureSectionImage2 from '../assets/calculator.svg';
-import FeatureSectionImage3 from '../assets/idea-launch.svg';
+import Hero from "../components/Hero";
+import TitleSection from "../components/TitleSection";
+import FeatureSection from "../components/FeatureSection";
+import AppLaunch from "../assets/app-launch";
+import Calculator from "../assets/calculator";
+import IdeaLaunch from "../assets/idea-launch";
 
 const titleDescription =
   "We partner with businesses to plan, build, and integrate cloud architecture. From strategy to execution, we prioritize smooth adoption so you can focus on what matters most.";
@@ -25,22 +19,24 @@ const HomePage = () => {
     <div>
       <Hero />
       <TitleSection title="Our Services" description={titleDescription} />
-      <FeatureSection
-        title="Cloud Integration"
-        description={featureDesciption1}
-        imageSrc={FeatureSectionImage1}
-      />
-      <FeatureSection
-        title="Custom Business Tools"
-        description={featureDesciption2}
-        imageSrc={FeatureSectionImage2}
-        reverse="True"
-      />
-      <FeatureSection
-        title="Web & App Development"
-        description={featureDesciption3}
-        imageSrc={FeatureSectionImage2}
-      />
+      <div className="flex flex-col py-16 gap-y-8">
+        <FeatureSection
+          title="Cloud Integration"
+          description={featureDesciption1}
+          svg={<AppLaunch className="max-w-[400px]" />}
+        />
+        <FeatureSection
+          title="Custom Business Tools"
+          description={featureDesciption2}
+          svg={<Calculator className="max-w-[400px]" />}
+          reverse="True"
+        />
+        <FeatureSection
+          title="Web & App Development"
+          description={featureDesciption3}
+          svg={<IdeaLaunch className="max-w-[400px]" />}
+        />
+      </div>
     </div>
   );
 };
