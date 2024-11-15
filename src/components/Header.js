@@ -7,19 +7,18 @@ import SideBar from "./SideBar";
 
 const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  // const location = useLocation();
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-  const handleResize = () => {
-    if (window.innerWidth >= 768 && isSidebarOpen) {
-      setIsSidebarOpen(false);
-    }
-  };
-
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isSidebarOpen) {
+        setIsSidebarOpen(false);
+      }
+    };
+
     // Attach resize event listener
     window.addEventListener("resize", handleResize);
 
