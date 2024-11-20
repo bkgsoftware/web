@@ -726,7 +726,7 @@ const AppLaunch = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_248_1705"
@@ -737,7 +737,7 @@ const AppLaunch = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_248_1705"
@@ -748,7 +748,7 @@ const AppLaunch = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_248_1705"
@@ -759,7 +759,7 @@ const AppLaunch = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
       </defs>
     </svg>

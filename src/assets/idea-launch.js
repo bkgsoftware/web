@@ -5,7 +5,7 @@ const IdeaLaunch = ({ className = "" }) => {
     <svg
       width="100%"
       height="100%"
-      viewBox="0 25 860 960"
+      viewBox="0 0 960 960"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -1030,8 +1030,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="386.671"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_36_2956"
@@ -1041,8 +1041,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="313.143"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_36_2956"
@@ -1052,8 +1052,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="340.603"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_36_2956"
@@ -1063,8 +1063,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="315.021"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_36_2956"
@@ -1074,8 +1074,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="269.9"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_36_2956"
@@ -1085,8 +1085,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="106.117"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_36_2956"
@@ -1096,8 +1096,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="293.584"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_36_2956"
@@ -1107,8 +1107,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="703.378"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_36_2956"
@@ -1118,8 +1118,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="920.061"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_36_2956"
@@ -1129,8 +1129,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="231.072"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_36_2956"
@@ -1140,8 +1140,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="222.78"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_36_2956"
@@ -1151,8 +1151,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="541.931"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_36_2956"
@@ -1162,8 +1162,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="876.055"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_36_2956"
@@ -1173,8 +1173,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="377.082"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_36_2956"
@@ -1184,8 +1184,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="731.299"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_36_2956"
@@ -1195,8 +1195,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="173.193"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_36_2956"
@@ -1206,8 +1206,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="491.796"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_36_2956"
@@ -1217,8 +1217,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="705.708"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_36_2956"
@@ -1228,8 +1228,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="218.78"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_36_2956"
@@ -1239,8 +1239,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="591.386"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_36_2956"
@@ -1250,8 +1250,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="557.259"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint21_linear_36_2956"
@@ -1261,8 +1261,8 @@ const IdeaLaunch = ({ className = "" }) => {
           y2="555.367"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF9A34" />
-          <stop offset="1" stop-color="#EB6421" />
+          <stop stop-color="#FFB800" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
       </defs>
     </svg>

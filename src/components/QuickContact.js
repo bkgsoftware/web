@@ -16,7 +16,7 @@ const QuickContact = () => {
   const [successMessage, setSuccessMessage] = useState("");
 
   const labelClass = "text-md text-black px-2";
-  const inputClass = `w-full rounded-3xl px-4 py-3 mt-1 text-black ${errors.name ? "" : "ring-orange"} placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange bg-blue bg-opacity-10`;
+  const inputClass = `w-full rounded-3xl px-4 py-3 mt-1 text-black ${errors.name ? "" : "ring-orange"} placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-orange bg-off-white bg-opacity-20`;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -99,7 +99,7 @@ const QuickContact = () => {
   }, [successMessage]);
 
   return (
-    <section className="flex justify-center items-center bg-blue py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
+    <section className="flex justify-center items-center bg-light-gray py-16 ml-auto mr-auto px-[25px] sm:px-[50px] md:px-[100px] lg:px-[150px]">
       <div className="flex flex-col lg:flex-row items-center justify-between w-[1200px] shadow-lg rounded-md lg:p-8 bg-white">
         <div className="flex flex-col w-full lg:w-2/3 bg-white py-8 px-4 sm:p-8 gap-y-8">
           <h1 className="text-3xl lg:text-4xl font-bold text-orange">
@@ -219,7 +219,7 @@ const QuickContact = () => {
                 <EmailIcon className="size-8" />
                 <div>consulting@bkgsoftware.com</div>
               </li>
-              <li className="flex justify-center">
+              <li className="flex justify-center pb-6 lg:pb-0">
                 <LinkedInIcon className="size-16" />
               </li>
             </ul>

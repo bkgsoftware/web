@@ -1027,7 +1027,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_36_3406"
@@ -1038,7 +1038,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_36_3406"
@@ -1049,7 +1049,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_36_3406"
@@ -1060,7 +1060,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint4_linear_36_3406"
@@ -1071,7 +1071,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint5_linear_36_3406"
@@ -1082,7 +1082,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_36_3406"
@@ -1093,7 +1093,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_36_3406"
@@ -1104,7 +1104,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_36_3406"
@@ -1115,7 +1115,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_36_3406"
@@ -1126,7 +1126,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_36_3406"
@@ -1137,7 +1137,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_36_3406"
@@ -1148,7 +1148,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_36_3406"
@@ -1159,7 +1159,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_36_3406"
@@ -1170,7 +1170,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_36_3406"
@@ -1181,7 +1181,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_36_3406"
@@ -1192,7 +1192,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_36_3406"
@@ -1203,7 +1203,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_36_3406"
@@ -1214,7 +1214,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_36_3406"
@@ -1225,7 +1225,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_36_3406"
@@ -1236,7 +1236,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_36_3406"
@@ -1247,7 +1247,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint21_linear_36_3406"
@@ -1258,7 +1258,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint22_linear_36_3406"
@@ -1269,7 +1269,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint23_linear_36_3406"
@@ -1280,7 +1280,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint24_linear_36_3406"
@@ -1291,7 +1291,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint25_linear_36_3406"
@@ -1302,7 +1302,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint26_linear_36_3406"
@@ -1313,7 +1313,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint27_linear_36_3406"
@@ -1324,7 +1324,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint28_linear_36_3406"
@@ -1335,7 +1335,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint29_linear_36_3406"
@@ -1346,7 +1346,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint30_linear_36_3406"
@@ -1357,7 +1357,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint31_linear_36_3406"
@@ -1368,7 +1368,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
         <linearGradient
           id="paint32_linear_36_3406"
@@ -1379,7 +1379,7 @@ const PaperPlane = ({ className = "" }) => {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFB800" />
-          <stop offset="1" stop-color="#FF7F0A" />
+          <stop offset="1" stop-color="#ff5a13" />
         </linearGradient>
       </defs>
     </svg>

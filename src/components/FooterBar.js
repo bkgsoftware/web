@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import QuickContact from "./QuickContact";
 import { Link, useLocation } from "react-router-dom";
 
@@ -19,70 +18,6 @@ const FooterBar = () => {
   return (
     <footer className="bg-black text-white">
       {showHtml ? <QuickContact /> : ""}
-      {/* <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="space-y-4">
-          <h3 className="text-white text-lg font-semibold">BKG Software</h3>
-          <p className="text-sm">Business Tooling Software Consultancy</p>
-          <div className="flex items-center space-x-4">
-            <Linkedin className="w-5 h-5 hover:text-dark-gray cursor-pointer" />
-          </div>
-        </div>
-
-        <div className="space-y-4">
-          <h3 className="text-white text-lg font-semibold">Quick Links</h3>
-          <ul className="space-y-2">
-            <li>
-              <Link to="#" className="hover:text-white">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="hover:text-white">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="hover:text-white">
-                Meet the Team
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="hover:text-white">
-                Careers
-              </Link>
-            </li>
-            <li>
-              <Link to="#" className="hover:text-white">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="space-y-4">
-          <h3 className="text-white text-lg font-semibold">Contact Us</h3>
-          <div className="space-y-3">
-            <div className="flex items-center space-x-3">
-              <MapPin className="w-5 h-5" />
-              <span className="text-sm">
-                123 Business Ave, Suite 100
-                <br />
-                New York, NY 10001
-              </span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Phone className="w-5 h-5" />
-              <span className="text-sm">+1 (226) 929-5717</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Mail className="w-5 h-5" />
-              <span className="text-sm">consulting@bkgsoftware.com</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    */}
-
       <div>
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

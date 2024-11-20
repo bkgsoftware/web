@@ -9,7 +9,6 @@ module.exports = {
       "dark-blue": "#3D5A80",
       "light-blue": "#98C1D9",
       blue: "#13b8ff",
-      "light-gray": "#E0FBFC",
       "dark-gray": "#293241",
       "red-orange": "#EE6C4D",
       white: "#F4F4F4",
@@ -17,9 +16,6 @@ module.exports = {
       black: "#202426",
       orange: "#ff5a13",
       success: "#4BB543",
-      // 'green': '#32936f',
-      green: "#71ff13", // triadic green to our orange
-      "dark-green": "#58bf0e",
       red: "#e73415",
       linkedinblue: "#0876b3",
       transparent: "#00000000",
