@@ -2,7 +2,7 @@ import React from 'react';
 import BraydenHeadshot from "../assets/image-not-found.png";
 import KarlHeadshot from "../assets/image-not-found.png";
 import GavinHeadshot from "../assets/image-not-found.png";
-import { Github, Linkedin } from "lucide-react"
+import { Github, Linkedin, Globe } from "lucide-react"
 import {Link} from "react-router-dom";
 
 const AboutPage = () => {
@@ -11,8 +11,8 @@ const AboutPage = () => {
             <div className="bg-white w-full md:w-1/3 p-6 md:p-8">
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"> About the team </h2>
                 <p className="mt-2 text-lg leading-8 text-gray-600">
-                    We're an enthusiastic team of engineers with fresh perspectives on web development.
-                    We grew up watching the web evolve. Now, we help contribute to that evolution on a daily basis.
+                    We're an enthusiastic team of engineers with fresh perspectives on software development.
+                    We grew up watching software evolve. Now, we help contribute to that evolution on a daily basis.
                 </p>
             </div>
             <div className="flex flex-col bg-white w-full md:w-2/3 p-6 md:p-8 gap-4">
@@ -37,8 +37,11 @@ const AboutPage = () => {
                                 <Link to="https://github.com/braybowler">
                                     <Github color='black' className="transition duration-350 hover:scale-110"></Github>
                                 </Link>
-                                <Link to="https://linkedin.com">
+                                <Link to="https://linkedin.com/in/brayden-bowler/">
                                     <Linkedin color='black' className="transition duration-350 hover:scale-110"></Linkedin>
+                                </Link>
+                                <Link to="https://8bitsmakeabray.ca">
+                                    <Globe color='black' className="transition duration-350 hover:scale-110"></Globe>
                                 </Link>
                             </div>
                         </div>

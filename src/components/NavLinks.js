@@ -3,8 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "Meet the Team", href: "/about" },
+  // { name: "Services", href: "/services" },
+  // { name: "Meet the Team", href: "/about" },
 ];
 
 const NavLinks = ({ orientation = "row" }) => {
