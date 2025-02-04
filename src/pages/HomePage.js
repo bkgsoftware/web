@@ -4,7 +4,6 @@ import FeatureSection from "../components/FeatureSection";
 import AppLaunch from "../assets/app-launch";
 import Calculator from "../assets/calculator";
 import IdeaLaunch from "../assets/idea-launch";
-import BackgroundBlobs from "../components/BackgroundBlobs";
 
 const titleDescription =
   "We partner with businesses to plan, build, and integrate technology solutions. From strategy to execution, we prioritize smooth adoption so you can focus on what matters most.";
