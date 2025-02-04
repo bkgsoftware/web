@@ -7,11 +7,11 @@ import IdeaLaunch from "../assets/idea-launch";
 import BackgroundBlobs from "../components/BackgroundBlobs";
 
 const titleDescription =
-  "We partner with businesses to plan, build, and integrate cloud architecture. From strategy to execution, we prioritize smooth adoption so you can focus on what matters most.";
+  "We partner with businesses to plan, build, and integrate technology solutions. From strategy to execution, we prioritize smooth adoption so you can focus on what matters most.";
 const featureDesciption1 =
-  "Our team is adept at leveraging the cloud to design resilient, always-available systems you can rely on, giving you peace of mind and uninterrupted productivity.";
+  "Our team is adept at leveraging the cloud to design resilient, always-available systems you can rely on. Cloud solutions provide you peace of mind and uninterrupted productivity.";
 const featureDesciption2 =
-  "We create software solutions built around your workflow, helping you make faster decisions and run your operations more efficiently.";
+  "We create software solutions that integrate seamlessly with existing workflows, or, entirely custom solutions to tackle new opportunities head-on.";
 const featureDesciption3 =
   "Our web solutions blend sleek design and familiar interfaces with the usability of your favorite apps—designed specifically to enhance your business operations.";
 
