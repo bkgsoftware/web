@@ -110,7 +110,7 @@ const QuickContact = () => {
           </p>
           <form
             onSubmit={handleSubmit}
-            name="quick-contact"
+            name="contact"
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"

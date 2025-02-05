@@ -11,6 +11,7 @@ function Button({ to = "/", text = "Button", type = "basic", className = "" }) {
     basic: "bg-black hover:bg-dark-gray text-white",
     "green-outline": "border-2 border-blue text-black",
     "green-fill": "bg-blue hover:saturate-150 text-white",
+    "orange-outline": "border-2 border-orange text-black",
     "orange-fill": "bg-orange hover:saturate-125 text-white",
   };
 

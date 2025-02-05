@@ -19,7 +19,7 @@ const Hero = () => {
           <Button
             to="/contact"
             text="Let's solve your problem"
-            type="orange-fill"
+            type="orange-outline"
           />
         </div>
       </div>
