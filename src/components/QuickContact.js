@@ -67,7 +67,7 @@ const QuickContact = () => {
                 method: "POST",
                 headers: {"Content-Type": "application/x-www-form-urlencoded"},
                 body: encode({
-                    "form-name": "quick-contact",
+                    "form-name": "contact",
                     ...formData,
                 }),
             })
@@ -117,7 +117,7 @@ const QuickContact = () => {
                         data-netlify-honeypot="bot-field"
                         className="flex flex-col space-y-4"
                     >
-                        <input type="hidden" name="form-name" value="quick-contact"/>
+                        <input type="hidden" name="form-name" value="contact"/>
                         <input type="hidden" name="bot-field"/>
 
                         <div>
