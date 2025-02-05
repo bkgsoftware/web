@@ -19,12 +19,7 @@ const Hero = () => {
           <Button
             to="/contact"
             text="Let's solve your problem"
-            type="green-fill"
-          />
-          <Button
-            to="/services"
-            text="Learn more about us"
-            type="green-outline"
+            type="orange-outline"
           />
         </div>
       </div>
