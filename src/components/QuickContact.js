@@ -2,8 +2,6 @@ import React, {useState, useEffect} from "react";
 import LocationIcon from "../assets/location";
 import PaperPlane from "../assets/paper-plane";
 import EmailIcon from "../assets/email";
-import LinkedInIcon from "../assets/linkedin";
-import {Link} from "react-router-dom";
 
 const QuickContact = () => {
     const [formData, setFormData] = useState({

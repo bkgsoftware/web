@@ -1,6 +1,4 @@
 import React from "react";
-import ContactForm from "../forms/ContactForm";
-import {Link} from "react-router-dom";
 import QuickContact from "../components/QuickContact";
 
 const ContactPage = () => {
