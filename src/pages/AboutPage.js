@@ -20,7 +20,7 @@ const AboutPage = () => {
                     <div>
                         <img src={BraydenHeadshot} alt="Brayden headshot" className="rounded-md shadow saturate-0 hover:saturate-100"/>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 ml-2">
                         <div>
                             <div className="text-lg leading-8 text-black font-bold">
                                 Brayden Bowler
@@ -31,9 +31,11 @@ const AboutPage = () => {
                         </div>
                         <div>
                             <div className="text-lg leading-8 text-black">
-                                description
+                                Bachelors of Computer Science graduate from Conestoga College. <br/>
+                                Passionate SaaS builder, entrepreneur, and professional developer. <br/>
+                                Hiker, golfer, volleyball player, avid reader, weight lifter.
                             </div>
-                            <div className="flex flex-row text-lg leading-8 text-black">
+                            <div className="mt-4 flex flex-row justify-around text-lg leading-8 text-black">
                                 <Link to="https://github.com/braybowler">
                                     <Github color='black' className="transition duration-350 hover:scale-110"></Github>
                                 </Link>
@@ -56,7 +58,7 @@ const AboutPage = () => {
                     <div>
                         <img src={KarlHeadshot} alt="Karl headshot" className="rounded-md shadow saturate-0 hover:saturate-100"/>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 ml-2">
                         <div>
                             <div className="text-lg leading-8 text-black font-bold">
                                 Karl Stencell
@@ -89,7 +91,7 @@ const AboutPage = () => {
                     <div>
                         <img src={GavinHeadshot} alt="Gavin headshot" className="rounded-md shadow saturate-0 hover:saturate-100"/>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 ml-2">
                         <div>
                             <div className="text-lg leading-8 text-black font-bold">
                                 Gavin Abeele

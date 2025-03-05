@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const navigation = [
   { name: "Home", href: "/" },
   // { name: "Services", href: "/services" },
-  // { name: "Meet the Team", href: "/about" },
+  { name: "About Us", href: "/about" },
 ];
 
 const NavLinks = ({ orientation = "row" }) => {
